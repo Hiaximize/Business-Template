@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: width .5s;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://raw.githubusercontent.com/Hiaximize/Business-Template/master/burger.jpg");
+}
+.second{
+  background-image: url("https://raw.githubusercontent.com/Hiaximize/Business-Template/master/burger_with_fries.jpg");
+  height: 200px;
+}
+.third{
+  background-image: url("https://raw.githubusercontent.com/Hiaximize/Business-Template/master/three_burgers.jpg");
+}
+.fourth{
+  background-image: url("https://raw.githubusercontent.com/Hiaximize/Business-Template/master/new%20Burger.jpg");
+}
+.dessert{
+  background-image: url("https://raw.githubusercontent.com/Hiaximize/Business-Template/master/icecream.jpeg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Derek's Grab-N-Go Burgers</h1>
+<h2>a fine fastfood experience</h2>
+<div class="first">
+  <p>welsh onion soko <span class="price">$14</span><br />
+  <small>Spicy jalapeno bacon ipsum dolor amet pork chop shoulder pastrami, buffalo kielbasa beef tail alcatra. Buffalo ribeye kielbasa, meatball pork jowl ground round ham. Biltong prosciutto tri-tip strip steak beef. Short ribs tenderloin beef tri-tip meatloaf, pancetta drumstick ribeye. </small></p>
+</div>
+
+<div class="second">
+  <p>pastrami boudin tongue <span class="price">$22</span><br />
+  <small>Spicy jalapeno bacon ipsum dolor amet pork short ribs beef, ground round brisket pork belly cow ribeye kielbasa buffalo jowl shank bresaola chuck. Rump buffalo prosciutto ball tip ham hock capicola pancetta pork loin, strip steak pig swine cow brisket hamburger. </small></p>
+</div>
+  
+<div class="third">
+  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
+  <small>Burgdoggen ball tip pancetta ribeye short ribs. Shank pig landjaeger pork loin. Shankle kielbasa brisket kevin pancetta burgdoggen tri-tip bresaola ham prosciutto chuck ball tip tenderloin corned beef. Ribeye capicola landjaeger, short ribs brisket t-bone fatback tongue andouille biltong jowl salami.</small></p>
+</div>
+
+<div class="fourth">
+  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
+  <small>Burgdoggen ball tip pancetta ribeye short ribs. Shank pig landjaeger pork loin. Shankle kielbasa brisket kevin pancetta burgdoggen tri-tip bresaola ham prosciutto chuck ball tip tenderloin corned beef. Ribeye capicola landjaeger, short ribs brisket t-bone fatback tongue andouille biltong jowl salami.</small></p>
+</div>
+
+<div class="dessert">
+  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
+  <small>Burgdoggen ball tip pancetta ribeye short ribs. Shank pig landjaeger pork loin. Shankle kielbasa brisket kevin pancetta burgdoggen tri-tip bresaola ham prosciutto chuck ball tip tenderloin corned beef. Ribeye capicola landjaeger, short ribs brisket t-bone fatback tongue andouille biltong jowl salami.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+
